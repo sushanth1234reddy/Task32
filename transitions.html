@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            background-color: green;
+            height: 200px;
+            width: 250px;
+            transition-property: all;
+            transition-duration: 5s;
+            /* border-radius: 40%; */
+            text-align: center;
+            transition-timing-function: ease;
+            
+            
+            
+        }
+        .main:hover{
+            background-color: yellow;
+            /* height: 350px;
+            width: 500px; */
+            transform: translateX(140px);
+            
+            
+        }
+        .hm{
+            background-color: red;
+            height: 100px;
+            width: 100px;
+        }
+        .hm:hover{
+            background-color: rgb(8, 14, 183);
+            height: 400px;
+            width: 300px;
+            transition: height 4s,width 8s,background-color 1s;
+        }
+        .m{
+            background-color: blue;
+            height: 50px;
+            width: 80px;
+        }
+        button:hover ~ .m{
+            background-color: green;
+            /* transform: skew(40deg,50deg); */
+            /* transform: scale(2); */
+            transform: translate(40px,40px);
+            /* transform: rotateX(360deg); */
+            height: 100px;
+            width: 100px;
+            transition: all 2s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+      hello
+    </div>
+    <div class="hm">
+        item
+
+
+    </div>
+    <button>
+        clicl
+    </button>
+    <div class="m">
+        item
+
+
+    </div>
+</body>
+</html>
